@@ -1,0 +1,1 @@
+sqlmap --url="<url>" -p "<param>" --batch --random-agent --threads=10 --risk=3 --level=5 --eta --dbs
