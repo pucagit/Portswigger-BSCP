@@ -1,0 +1,9 @@
+- Stage 1: Access any user account.
+- Stage 2: Use your user account to access the admin interface at /admin, perhaps by elevating your privileges or compromising the administrator account.
+- Stage 3: Use the admin interface to read the contents of /home/carlos/secret from the server's filesystem, and submit it using "submit solution".
+
+- Never need to guess folders, filenames or parameter names.
+- Use Burp Scanner at specific request and insertion point.
+- Each application has up to one active user, who will be logged in either as a user or an administrator. You can assume that they will visit the homepage of the site every 15 seconds, and click any links in any emails they receive from the application.
+- If you find an SSRF vulnerability, you can use it to read files by accessing an internal-only service, running on localhost:6566.
+- Skip _lab and _lab_analytics cookies
