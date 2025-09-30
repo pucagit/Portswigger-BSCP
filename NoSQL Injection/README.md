@@ -8,10 +8,10 @@ There are two different types of NoSQL injection:
   
 In JSON messages, you can insert query operators as nested objects. For example, `{"username":"wiener"}` becomes `{"username":{"$ne":"invalid"}}`.
 For URL-based inputs, you can insert query operators via URL parameters. For example, `username=wiener` becomes `username[$ne]=invalid`. If this doesn't work, you can try the following:
-    1. Convert the request method from GET to POST.
-    2. Change the Content-Type header to application/json.
-    3. Add JSON to the message body.
-    4. Inject query operators in the JSON.
+1. Convert the request method from GET to POST.
+2. Change the Content-Type header to application/json.
+3. Add JSON to the message body.
+4. Inject query operators in the JSON.
 
 ### LAB: Exploiting NoSQL injection to extract data
 Take advantage of the response for request `GET /user/lookup?user=`
